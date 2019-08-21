@@ -1,0 +1,25 @@
+<div class="container">
+<ul>
+  <li *ngFor="let przepis of listaPrzepisow">
+      <div class="kompletnyPrzepis">
+    <p>Nazwa potrawy: {{przepis.nazwaPotrawy}} <br></p>
+    <ul>
+      <li *ngFor ="let skladnik of przepis.skladniki"> <!--???-->
+        Nazwa składnika: {{skladnik.nazwa}}<br>
+        Ilość: {{skladnik.ilosc}}<br>
+        Wartość: {{skladnik.wartosc}}<br>
+      </li>
+    </ul>
+      <p>Opis: <br>{{przepis.opis}}</p>
+      <button (click)="edit(przepis.id)">Edit</button>
+    </div>
+  </li> 
+</ul>
+
+
+
+<button class="btn btn-success" (click)="MoveToMainPage()">To Main Page</button>
+<button class="btn btn-success" (click)="MovetoAboutAuthor()">About Author</button>
+<button class="btn btn-success" (click)="MovetoNewRecipe()">New Recipe</button>
+
+</div>

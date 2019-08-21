@@ -1,0 +1,43 @@
+.listaprzepisow
+{
+    color: rgb(25, 60, 177);
+    font-size: 20px;
+}
+
+.listaprzepisow_menu
+{
+    /*border: solid;
+    min-width: 58%;*/
+    color: black;
+    /*margin-top: 20px;*/
+}
+
+.dodajprzepis
+{
+    color: rgb(10, 100, 44);
+    font-size: 20px;
+   
+}
+
+.dodajprzepis_button
+{  
+    padding-left: 20px;
+    margin-top: 50px;
+}
+
+.listaprzepisow_menu > ul > li
+{
+    list-style-type: none;
+}
+
+.guziki_dol > .btn
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 40px;
+}
+
+.container
+{
+    height: auto;
+}

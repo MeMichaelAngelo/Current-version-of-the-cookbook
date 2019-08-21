@@ -1,0 +1,20 @@
+.container  > ul > li
+{
+    list-style-type: none;
+}
+
+.container  > ul > li > .kompletnyPrzepis
+{
+    list-style-type: none;
+}
+
+.container  > ul > li > .kompletnyPrzepis > ul > li
+{
+    list-style-type: none;
+}
+
+.kompletnyPrzepis
+{
+    border-top: 5px solid rgb(112, 23, 23);
+    border-bottom: 5px solid rgb(112, 23, 23);
+}

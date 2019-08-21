@@ -1,0 +1,77 @@
+<div class="container">
+
+  <div class="row">
+    <div class="form-group col-md-6 offset-md-3">
+      <input type="text" class="form-control" placeholder="What is name of your recipe?" [(ngModel)]="tytul">
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="form-group col-xs-12 col-md-6">
+      <ul>
+        <li *ngFor="let test of ListaSkladnikow">
+          {{test.nazwa}} {{test.ilosc}}{{test.wartosc}}
+          <button (click)="remove(test)">Usuń</button>
+        </li>
+      </ul>
+      <div class="margin">
+        <div class="form">
+
+          <input type="text" name="nazwa" class="form-control" minlength="3" maxlength="100"placeholder="ingredient name" [(ngModel)]="nazwa">
+        </div>
+
+<div class="row  no-gutters">
+<div class="col-xs-12 col-md-9">
+        <div class="form">
+          <input type="number" step="0.25" min="0" max="1000" class="form-control" placeholder="value" [(ngModel)]="ilosc">
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-3 ">
+        <div class="form margin-left">
+          <select class="form-control" [(ngModel)]="wartosc">
+            <option value="g">g</option>
+            <option value="dag">dag</option>
+            <option value="kg">kg</option>
+            <option value="ml">ml</option>
+            <option value="l">l</option>
+            <option value="szt">szt</option>
+          </select>
+        </div>
+        </div>
+
+
+</div>
+
+      </div>
+
+      <div class="obnizenieButtona offset-xs-6 offset-md-3">
+        <div>
+          <button type="button" class="btn btn-success" (click)="DodajSkladnik()">Add ingredient</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group col-xs-12 col-md-6">
+      <form>
+        <div class="form-group textarea">
+          <textarea class="form-control" rows="5" cols="50" minlength="100"
+            placeholder="How to prepare your recipe?" [(ngModel)]="pole" name="pole"></textarea>
+        </div>
+      </form>
+
+
+
+      <div class="offset-xs-6 offset-md-3">
+        <button type="button" class="btn btn-success" (click)="ZatwierdzPrzepis()">Accept my recipe</button>
+      </div>
+    </div>
+  </div>
+<div class="row">
+  <div class="col-11 offset-1 offset-md-4">
+    <button class="btn btn-success" (click)="MoveToMainPage()">To Main Page</button>
+    <button class="btn btn-success" (click)="MovetoAboutAuthor()">About Author</button>
+  </div>
+</div>
+

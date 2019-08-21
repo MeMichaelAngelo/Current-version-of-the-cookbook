@@ -1,0 +1,32 @@
+.btn{
+    margin-bottom: 10px;
+    margin-right: 40px;
+}
+
+.btn:first-child{
+    margin-left: 40px;
+}
+
+.margin{
+    margin-right: 30px;
+}
+
+.form{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.obnizenieButtona{
+    margin-top: 50px;
+}
+
+.textarea
+{
+    padding-top: 14px;
+}
+
+.margin-left
+{
+    margin-left: -10px !important;
+}

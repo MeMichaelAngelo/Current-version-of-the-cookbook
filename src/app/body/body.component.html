@@ -1,0 +1,26 @@
+<div class="container">
+<div class="row">
+<div class="listaprzepisow col-md-6">
+  What do you want to eat?
+  <div class="listaprzepisow_menu col-md-6 ">
+      <ul>
+        <li *ngFor="let przepis of listaPrzepisow">
+          {{przepis.nazwaPotrawy}}
+        </li>
+      </ul>
+    </div>
+</div>
+
+<div class="dodajprzepis col-md-6">
+  Enter a new recipe
+  <div class="dodajprzepis_button">
+      <button class="btn btn-success" (click)="moveto()">Add a new recipe</button>
+  </div>
+</div>
+
+<div class="guziki_dol">
+  <button class="btn btn-success" (click)="doSpisuSkladnikow()">To list of Ingredients</button>
+  <button class="btn btn-success" (click)="MovetoListOfRecipes()">To list of recipes</button>
+</div>
+</div>
+</div>
